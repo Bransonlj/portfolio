@@ -1,0 +1,53 @@
+@use "../../../styles/colours.scss";
+@use "../../../styles/animations.scss";
+
+.mainContainer {
+    min-height: 100vh;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.fadeIn {
+    visibility: visible;
+    animation: animations.$fadeInBottomAnimation;
+}
+
+.projectsContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.project {
+    border: 2px solid colours.$light-grey;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.projectTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    h2 {
+        margin: 0;
+    }
+}
+
+.technologiesContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    span {
+        padding: 5px;
+    }
+}
+
+
+

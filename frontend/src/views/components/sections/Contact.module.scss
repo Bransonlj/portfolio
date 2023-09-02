@@ -1,0 +1,14 @@
+@use "../../../styles/animations.scss";
+
+.mainContainer {
+    min-height: 100vh;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.fadeIn {
+    visibility: visible;
+    animation: animations.$fadeInBottomAnimation;
+}

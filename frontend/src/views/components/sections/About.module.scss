@@ -1,0 +1,54 @@
+@use "../../../styles/colours.scss";
+@use "../../../styles/animations.scss";
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.mainContainer {
+    min-height: 100vh;
+}
+
+.introContainer {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    width: fit-content;
+    padding: 40px;
+
+    border-bottom: 2px solid colours.$blue;
+
+    h1, h2 {
+        margin: 0;
+    }
+}
+
+.fadeInFirst {
+    animation: fadeInRight 0.5s ease-in;
+}
+
+.name {
+    font-size: 4em;
+    margin: 0;
+
+    background-color: colours.$blue;
+    background-image: linear-gradient(45deg, colours.$blue, colours.$purple);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.fadeBottomUp {
+    animation: animations.$fadeInBottomAnimation;
+}
+
+.paragraph {
+    width: 70%;
+}

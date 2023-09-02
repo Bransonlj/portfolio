@@ -1,0 +1,72 @@
+@use "../../../styles/colours.scss";
+@use "../../../styles/animations.scss";
+
+.hidden {
+    visibility: hidden;
+}
+
+.fadeIn {
+    visibility: visible;
+    animation: animations.$fadeInBottomAnimation;
+}
+
+.mainContainer {
+    min-height: 100vh;
+}
+
+.languageContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.technologyContainer {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+}
+
+.categoryName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: colours.$blue;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    //border-bottom: 10px solid colours.$black;
+
+}
+
+.categoryContainer {
+    justify-self: normal;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    border-top: 5px solid colours.$blue;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        padding: 5px;
+    }
+}
+
+.slideUpTransition{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s;
+    .name {
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    &:hover {
+        transform: translateY(-8px);
+        .name {
+            opacity: 1;
+        }
+
+    }
+}

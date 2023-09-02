@@ -1,0 +1,13 @@
+@keyframes fadeInBottom {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 100;
+    }
+}
+
+$fadeInBottomAnimation: fadeInBottom 0.5s ease-in;

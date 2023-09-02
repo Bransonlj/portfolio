@@ -1,0 +1,22 @@
+@use "./styles/colours.scss";
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-width: 1000px;
+  width: 100%;
+  margin: 0;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: colours.$black;
+  color: colours.$light-grey;
+
+  h1 {
+    color: colours.$purple;
+    font-size: 2.5em;
+  }
+}
